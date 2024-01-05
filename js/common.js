@@ -2,7 +2,6 @@
     $(function () {
     });
     $(document).ready(function () {
-        $(this).initMap();
         $(this).initSwiper();
         $(this).initKakao();
         $(this).resizeFrame();
@@ -46,38 +45,4 @@ $.fn.initSwiper = function () {
         },
     });
 }
-$.fn.initMap = function () {
-    var mapId = 'map';
-    var mapObj = $('#' + mapId);
-    var mapWidth = mapObj.closest('.map-area').outerWidth();
-    var latitude = mapObj.data('latitude');
-    var longitude = mapObj.data('longitude');
-    var mapAddress = mapObj.data('address');
-    var mapHeight = 240;
-    var oMap = new naver.maps.Map('map', {
-        size: new naver.maps.Size(mapWidth, mapHeight),
-        zoom: 15,
-        minZoom: 8,
-        scrollWheel: false,
-        logoControl: false,
-        scaleControl: false,
-        mapDataControl: false,
-        draggable: false,
-        pinchZoom: false,
-    });
-    naver.maps.Service.geocode({ address: mapAddress }, function (status, response) {
-        if (status === naver.maps.Service.Status.ERROR) {
-            return alert('Something Wrong!');
-        }
-        var item = response.result.items[0];
-        var setLongitude = longitude ? longitude : item.point.x
-        var setLatitude = latitude ? latitude : item.point.y
-        var point = new naver.maps.Point(setLongitude, setLatitude);
-        oMap.setCenter(point);
-        var marker = new naver.maps.Marker({
-            position: point,
-            map: oMap,
-            draggable: false,
-        });
-    });
-}
+
