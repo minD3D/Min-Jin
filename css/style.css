@@ -1,0 +1,105 @@
+ .polaroid-gallery {
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: space-around;
+ 	padding: 5px;
+ 	/* 갤러리 패딩 최소화 */
+ }
+
+ .polaroid {
+ 	background-color: white;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ 	margin: 5px;
+ 	padding: 5px;
+ 	text-align: center;
+ 	flex: 0 0 calc(33.333% - 10px);
+ 	box-sizing: border-box;
+ }
+
+ @media (max-width: 360px) {
+ 	.polaroid {
+ 		flex: 0 0 calc(50% - 10px);
+ 	}
+ }
+
+ .polaroid img {
+ 	width: 100%;
+ 	height: auto;
+ 	filter: grayscale(100%);
+ 	transition: filter 0.3s ease;
+ }
+
+
+ .polaroid:hover img {
+ 	filter: none;
+ }
+
+ /* 모달 스타일 */
+ .modal {
+ 	display: none;
+ 	align-items: center;
+ 	/* 수직 중앙 정렬 */
+ 	justify-content: center;
+ 	/* 수평 중앙 정렬 */
+ 	height: 100%;
+ 	/* 팝업의 높이를 전체 화면으로 설정 */
+ 	width: 100%;
+ 	/* 팝업의 너비를 전체 화면으로 설정 */
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	background-color: rgba(0, 0, 0, 0.7);
+ 	/* 반투명 배경 */
+ }
+
+ .modal-content {
+
+ 	/* 배경색 투명하게 */
+ 	margin: 200px auto;
+ 	text-align: center;
+ 	position: relative;
+ 	max-width: 100%;
+ 	/* 전체 너비의 80%만 차지 */
+ }
+
+ .close {
+ 	position: absolute;
+ 	top: 10px;
+ 	right: 10px;
+ 	color: #888;
+ 	font-size: 28px;
+ 	cursor: pointer;
+ }
+
+
+ /* Close button */
+ .close {
+ 	position: absolute;
+ 	top: 10px;
+ 	right: 10px;
+ 	color: white;
+ 	font-size: 30px;
+ 	font-weight: bold;
+ 	cursor: pointer;
+ }
+
+ /* Next and previous buttons */
+ .prev,
+ .next {
+ 	cursor: pointer;
+ 	position: absolute;
+ 	top: 50%;
+ 	transform: translateY(-50%);
+ 	color: white;
+ 	font-weight: bold;
+ 	font-size: 30px;
+ 	user-select: none;
+ }
+
+ .next {
+ 	right: 10px;
+ }
+
+ .prev {
+ 	left: 10px;
+ }

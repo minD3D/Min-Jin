@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>카카오 링크 공유 예시</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 카카오 링크 공유 버튼 -->
+    <a id="kakao-share" href="javascript:;" data-title="공유할 제목" data-description="공유할 설명" data-thumbnail="이미지 URL"
+        data-url="공유할 URL">
+        카카오로 공유하기
+    </a>
+
+    <!-- 카카오 SDK -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // 카카오 링크 공유 초기화 함수
+            $.fn.initKakao = function () {
+                var shareObj = $('#kakao-share');
+                Kakao.init('92d151471b557328796dc7565a93a7bb'); // 카카오 앱 키
+                Kakao.Link.createDefaultButton({
+                    container: '#kakao-share',
+                    objectType: 'feed',
+                    content: {
+                        title: shareObj.data('title'),
+                        description: shareObj.data('description'),
+                        imageUrl: shareObj.data('thumbnail'),
+                        link: {
+                            mobileWebUrl: shareObj.data('url'),
+                            webUrl: shareObj.data('url')
+                        }
+                    }
+                });
+            };
+
+            // 카카오 링크 공유 초기화
+            $(this).initKakao();
+        });
+    </script>
+</body>
+
+</html>

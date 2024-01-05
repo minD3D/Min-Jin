@@ -1,0 +1,408 @@
+@charset 'utf-8';
+
+/*===========================================================================
+	RESET CSS
+============================================================================*/
+html {
+	-webkit-text-size-adjust: none;
+	-webkit-overflow-scrolling: none;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+select,
+textarea,
+p,
+blockquote,
+address {
+	margin: 0;
+	padding: 0;
+	outline-style: none;
+	outline-offset: 0;
+}
+
+input {
+	-webkit-border-radius: 0;
+	-webkit-appearance: none;
+}
+
+img,
+fieldset,
+button,
+iframe {
+	border: 0 none;
+	outline: 0;
+}
+
+fieldset {
+	min-width: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-before: 0;
+	-webkit-padding-start: 0;
+	-webkit-padding-end: 0;
+	-webkit-padding-after: 0;
+}
+
+hr,
+button img {
+	display: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+textarea {
+	overflow: auto;
+}
+
+legend {
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+	text-decoration: none;
+}
+
+br {
+	display: block;
+	margin-bottom: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+br:before {
+	display: block;
+	margin-top: 0;
+	content: '';
+}
+
+br:after {
+	content: '.';
+	visibility: hidden;
+	display: block;
+}
+
+/*===========================================================================
+	FONT
+============================================================================*/
+* {}
+
+/*===========================================================================
+	CONTENT USER SETTING
+===========================================================================*/
+/*- visibility,display ----------------------------------------------------------------------*/
+.fixed {
+	display: block;
+	min-height: 1%;
+	*zoom: 1;
+}
+
+.fixed:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: '.';
+	font-size: 0;
+	line-height: 0;
+}
+
+* html .fixed {
+	height: 1%;
+}
+
+.show {
+	display: block;
+	visibility: visible;
+}
+
+.hide {
+	display: none;
+	visibility: hidden;
+}
+
+.no-select {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.img-txt,
+.img-txt *,
+.img-txt-title {
+	display: inline-block !important;
+	overflow: hidden;
+	text-indent: -99999px !important;
+	font-size: 0px !important;
+	line-height: 0px !important;
+	*text-indent: 0 !important;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.img-menu,
+.img-menu * {
+	display: inline-block !important;
+	text-indent: -99999px !important;
+	font-size: 0px !important;
+	line-height: 0px !important;
+	*text-indent: 0 !important;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+/*- link ----------------------------------------------------------------------*/
+a,
+a *,
+a:link,
+a:link * {
+	cursor: pointer;
+}
+
+/*- cursor ----------------------------------------------------------------------*/
+.cursor {
+	cursor: pointer
+}
+
+/*- li,ol,ul,dl ----------------------------------------------------------------------*/
+ol {
+	list-style: decimal;
+	list-style-position: outside;
+}
+
+ul {
+	list-style-position: outside;
+}
+
+dl dt {}
+
+/*- button ----------------------------------------------------------------------*/
+.btn {
+	position: relative;
+	display: inline-block !important;
+	overflow: visible !important;
+	margin: 0;
+	padding: 0;
+	outline: none !important;
+	border: 0;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	vertical-align: top;
+	text-decoration: none !important;
+	cursor: pointer !important;
+	zoom: 1;
+	*display: inline !important;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+}
+
+/*- imgBlock ----------------------------------------------------------------------*/
+.img-bul {
+	display: inline-block !important;
+	overflow: hidden;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	vertical-align: top;
+	text-indent: -99999px !important;
+	font-size: 0px !important;
+	line-height: 0px !important;
+	*text-indent: 0 !important;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/*- imgBlock ----------------------------------------------------------------------*/
+.img-block {
+	overflow: hidden;
+}
+
+.img-block>img {
+	float: left;
+	max-width: 100%;
+	min-width: 100%;
+	width: 100%;
+}
+
+/*- line ----------------------------------------------------------------------*/
+.line-solid {
+	display: block;
+	padding: 0;
+	height: 1px;
+	border: 0;
+	*border: 1px solid;
+}
+
+/*===========================================================================
+	CONTAINER
+============================================================================*/
+body .content>.head {
+	display: block;
+	min-height: 1%;
+	*zoom: 1;
+}
+
+body .content>.head:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: '.';
+	font-size: 0;
+	line-height: 0;
+}
+
+* html body .content>.head {
+	height: 1%;
+}
+
+body .content>.main {
+	display: block;
+	min-height: 1%;
+	*zoom: 1;
+}
+
+body .content>.main:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: '.';
+	font-size: 0;
+	line-height: 0;
+}
+
+* html body .content>.main {
+	height: 1%;
+}
+
+body .content>.foot {
+	display: block;
+	min-height: 1%;
+	*zoom: 1;
+}
+
+body .content>.foot:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: '.';
+	font-size: 0;
+	line-height: 0;
+}
+
+* html body .content>.foot {
+	height: 1%;
+}
+
+body .content .section {
+	display: block;
+	min-height: 1%;
+	*zoom: 1;
+}
+
+body .content .section:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: '.';
+	font-size: 0;
+	line-height: 0;
+}
+
+* html body .content .section {
+	height: 1%;
+}
+
+body .content .inner-section {
+	display: block;
+	min-height: 1%;
+	*zoom: 1;
+}
+
+body .content .inner-section:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: '.';
+	font-size: 0;
+	line-height: 0;
+}
+
+* html body .content .inner-section {
+	height: 1%;
+}
