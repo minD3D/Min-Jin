@@ -14,7 +14,7 @@
 
 $.fn.initKakao = function () {
     var shareObj = $('#kakao-share');
-    Kakao.init('92d151471b557328796dc7565a93a7bb');
+    Kakao.init('3171be89801ae0b8c6f1665e20401960');
     Kakao.Link.createDefaultButton({
         container: '#kakao-share',
         objectType: 'feed',
