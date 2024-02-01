@@ -255,8 +255,8 @@ body .content>.foot>.img-txt.copyright {
 	opacity: 0.65 !important;
 }
 
-.card-template.page4>.txt-map-guide {
-	margin-top: 20px;
+.txt-map-guide {
+	margin-top: 40px;
 	text-align: center;
 	font-size: 13px;
 	display: block;
