@@ -131,18 +131,41 @@ body .content>.foot>.img-txt.copyright {
 	height: 40px;
 }
 
+@font-face {
+	font-family: 'RidiBatang';
+	font-weight: normal;
+	font-style: normal;
+	src: url('https://cdn.jsdelivr.net/gh/webfontworld/ridi/RidiBatang.eot');
+	src: url('https://cdn.jsdelivr.net/gh/webfontworld/ridi/RidiBatang.eot?#iefix') format('embedded-opentype'),
+		url('https://cdn.jsdelivr.net/gh/webfontworld/ridi/RidiBatang.woff2') format('woff2'),
+		url('https://cdn.jsdelivr.net/gh/webfontworld/ridi/RidiBatang.woff') format('woff'),
+		url('https://cdn.jsdelivr.net/gh/webfontworld/ridi/RidiBatang.ttf') format("truetype");
+	font-display: swap;
+
+}
+
+.card-template.page1 {
+	font-family: 'RidiBatang', serif;
+
+}
+
 .card-template.page2>.txt-intro {
 	text-align: center;
+	font-family: 'RidiBatang', serif;
+	font-size: 14px;
 }
 
 .card-template.page2>ul>li {
 	text-align: center;
 	line-height: 40px;
+	font-family: 'RidiBatang', serif;
 }
 
 .card-template.page2>ul>li>sub {
 	vertical-align: baseline;
 	font-size: 13px;
+	font-family: 'RidiBatang', serif;
+	font-weight: 100;
 }
 
 .card-template.page2>hr.type1 {
@@ -156,11 +179,6 @@ body .content>.foot>.img-txt.copyright {
 
 .card-template.page2>hr.type2 {
 	margin: 30px auto;
-}
-
-.card-template.page2>.txt-location {
-	text-align: center;
-	letter-spacing: 0.5px;
 }
 
 .card-template.page2>.txt-pic {
@@ -238,8 +256,24 @@ body .content>.foot>.img-txt.copyright {
 	height: 70px;
 }
 
+.card-template.page2>.txt-location {
+	text-align: center;
+	font-family: 'RidiBatang', serif;
+	color: #1D3924;
+}
+
 .card-template.page4>.txt-location {
 	text-align: center;
+	font-family: 'RidiBatang', serif;
+	color: #1D3924;
+}
+
+.card-template.page4>.txt-location2 {
+	text-align: center;
+	font-family: 'RidiBatang', serif;
+	font-size: 13px;
+	color: #7A9705;
+	margin-top: 0px;
 }
 
 .card-template.page4>.map-area {}
@@ -267,17 +301,42 @@ body .content>.foot>.img-txt.copyright {
 	margin: 25px auto;
 }
 
-.card-template.page4>dl {
+.card-template.page4>table {
 	margin: 0 15px;
 }
 
-.card-template.page4>dl * {
+.card-template.page4>table>td * {
 	font-size: 15px;
 	line-height: 24px;
 	letter-spacing: 0px;
 }
 
-.card-template.page4>dl>dt {
-	margin-top: 25px;
-	color: #9a9999;
+td.type1 {
+	vertical-align: top;
+	margin-top: 20px;
+	color: #7A9705;
+	padding-top: 10px;
+}
+
+@font-face {
+	font-family: 'NanumSquare';
+	font-weight: 400;
+	src: url(NanumSquareR.eot);
+	src: local('☺'),
+		url(NanumSquareR.eot?#iefix) format('embedded-opentype'),
+		url(NanumSquareR.woff2) format('woff2'),
+		url(NanumSquareR.woff) format('woff'),
+		url(NanumSquareR.ttf) format('truetype');
+}
+
+td.type2 {
+	color: #000;
+	margin-left: 20px;
+	font-family: 'NanumSquare';
+	font-size: 13px;
+	line-height: 1.8;
+	vertical-align: middle;
+	padding-left: 15px;
+	padding-top: 13px;
+	font-weight: 400;
 }

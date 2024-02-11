@@ -41,7 +41,7 @@
         :root {
             --point-color1: #4f7341;
             --point-color2: #A4BE7B;
-            --font-family: SunBatang-Light, serif;
+            --font-family: 'SunBatang-Light', serif;
             --font-size: 15px;
             --background: url(/img/bg/bg_img_white.jpg);
             --main-section-background: #FFFFFF;
@@ -436,22 +436,14 @@
 
                         </div>
 
-
-
-
                         <div class="card-template page2">
                             <span class="card-page-num"></span>
                             <div class="txt-intro">
                                 떨림으로 시작한 2022년<br />
-                                마음이 이끄는 길을 따라 걷다 보니<br />
-                                늘 함께였습니다.<br />
+                                마음이 이끄는 길을 따라 걷다 보니 늘 함께였습니다.<br />
                                 <br />
-                                곁에 있을 때 <br />
-                                가장 나다운 모습이 되게 하는 한 사람<br />
-
-                                꿈을 펼칠 수 있도록 <br />
-                                서로에게 날개가 되어줄 한 사람<br />
-                                <br />
+                                곁에 있을 때 가장 나다운 모습이 되게 하는 한 사람<br />
+                                꿈을 펼칠 수 있도록 서로에게 날개가 되어줄 한 사람<br />
                                 그 둘이 삶의 여행을 함께 떠나려 합니다.<br />
                                 <br />
                                 봄과 함께, 우리 결혼합니다.<br />
@@ -459,11 +451,11 @@
                             </div>
                             <hr class="line type1" />
                             <ul>
-                                <li>임동빈ㆍ박순희<sub>의 아들</sub> 임진용</li>
-                                <li>이정미ㆍ김성기<sub>의 딸</sub> 김민지</li>
+                                <li>임동빈ㆍ박순희<sub>의 장남</sub> 진용</li>
+                                <li>김성기ㆍ이정미<sub>의 장녀</sub> 민지</li>
                             </ul>
-                            <hr class="line type2" />
-                            <div class="txt-location">2024년 4월 21일 일요일 오후 4시 00분<br />더채플앳논현, 라포레홀
+
+                            <div class="txt-location">
                                 <br /><br />
                             </div>
                         </div>
@@ -537,7 +529,7 @@
                             </div>
 
                             <div class="txt-pic">
-                                Picture from Bali and Itary
+                                Pictures from Bali and Itary
                                 <br />
                                 <br />
                             </div>
@@ -633,28 +625,41 @@
                     </div>
                     <div class="card-template page4">
                         <span class="card-page-num"></span>
-                        <div class="txt-location">더채플앳논현, 라포레홀</div>
+                        <div class="txt-location">2024년 4월 21일 일요일 오후 4시
+                        </div>
+                        <div class="txt-location2">더채플앳논현, 라포레홀
+                        </div>
+
                         <hr class="line type2" />
                         <div class="map-area">
                             <span class="img-block"><img src="./sample/map.jpg" /></span>
                         </div>
-                        <br /><br />
-                        <a href="http://map.naver.com/?query=서울 강남구 논현로 549" target="_blank" class="txt-map-guide">
-                            <br /><br />
-                            [
+                        <a href="http://map.naver.com/?query=서울 강남구 논현로 549" target="_blank" class="txt-map-guide">[
                             네이버지도보기 - 클릭 ]</a>
-
                         <hr class="line type2" />
-                        <dl>
-                            <dt>주 소</dt>
-                            <dd>서울특별시 강남구 논현로 549 6층 <br />(역삼동 607-21)<br />☎ 02-562-1121</dd>
-                            <dt>지하철</dt>
-                            <dd>9호선 언주역 7번 출구에서 도보 3분<br />2호선 역삼역 6번 출구에서 도보 7분</dd>
-                            <dt>버 스</dt>
-                            <dd>차병원 정류장<br />147, 463, 3412, 4211, 3600, 9600</dd>
-                            <dt>주 차</dt>
-                            <dd>건물 내 주차장 1시간 30분 무료</dd>
-                        </dl>
+
+                        <table>
+                            <tr>
+                                <td class="type1">주 소</td>
+                                <td class="type2">서울특별시 강남구 논현로 549 6층 <br />(역삼동 607-21) 02-562-1121</td>
+                            </tr>
+                            <tr>
+                                <td class="type1">지하철</td>
+                                <td class="type2">
+                                    언주역 (9호선) 7번 출구 150M
+                                    <br />역삼역 (2호선) 6번 출구 450M
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="type1">버 스</td>
+                                <td class="type2">차병원(역삼방면) 하차 후 역삼역 방면 50M<br />
+                                    147,463(간선) 4211(지선) 3600,9600(광역)</td>
+                            </tr>
+                            <tr>
+                                <td class="type1">주 차</td>
+                                <td class="type2">내부 150대, 외부 300대 1시간 30분 무료</td>
+                            </tr>
+                        </table>
 
                     </div>
 
@@ -684,8 +689,8 @@
                                                 <input type="text" class="account" value="1002241109653"
                                                     var="groomBankAcc" style="display: none" />
                                                 <div class="left_box">
-                                                    <h4>신랑</h4> 우리은행 김민지
-                                                    <div class="acc_num" var="groomBankAcc">1002-241-109-653</div>
+                                                    <h4>신랑</h4> 국민은행 임진용
+                                                    <div class="acc_num" var="groomBankAcc">524902-01-312297</div>
                                                 </div>
                                                 <div class="right_box">
                                                     <a href="javascript:;" class="s_btn"

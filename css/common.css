@@ -1,25 +1,81 @@
 @charset 'utf-8';
+
 /*===========================================================================
 	FONT
 ============================================================================*/
-*{font-size:15px;line-height:40px;font-family:'Nanum Myeongjo','Arial','Gulim';font-weight:100;color:#010101;letter-spacing:0.8px;}
+* {
+	font-size: 15px;
+	line-height: 40px;
+	font-family: 'RidiBatang', 'Arial', 'Gulim';
+	font-weight: 100;
+	color: #010101;
+	letter-spacing: 0.8px;
+}
+
 /*===========================================================================
 	CONTENT USER SETTING
 ===========================================================================*/
 /*- link ----------------------------------------------------------------------*/
-a,a *,a:link,a:link *{text-decoration:none;cursor:pointer;}
-.link,.use-hyperlink{text-decoration:none;cursor:pointer;}
-em{font-style:normal;}
+a,
+a *,
+a:link,
+a:link * {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.link,
+.use-hyperlink {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+em {
+	font-style: normal;
+}
+
 /*- li,ol,ul,dl ----------------------------------------------------------------------*/
-li{line-height:22px;}
-ol{padding-left:16px;}
-ol > li{ }
-ul{ }
-ul > li{ }
-ul{list-style-position:outside;}
-dl{ }
-dl > dt{ }
-dl > dd{ }
-pre{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-all;}
+li {
+	line-height: 22px;
+}
+
+ol {
+	padding-left: 16px;
+}
+
+ol>li {}
+
+ul {}
+
+ul>li {}
+
+ul {
+	list-style-position: outside;
+}
+
+dl {}
+
+dl>dt {}
+
+dl>dd {}
+
+pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-all;
+}
+
 /*- button ----------------------------------------------------------------------*/
-.btn{padding:0 10px;height:33px !important;border-width:0;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background-color:#999999;color:#ffffff !important;line-height:33px !important;}
+.btn {
+	padding: 0 10px;
+	height: 33px !important;
+	border-width: 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #999999;
+	color: #ffffff !important;
+	line-height: 33px !important;
+}
