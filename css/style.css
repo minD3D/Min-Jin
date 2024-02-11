@@ -78,9 +78,13 @@
  	top: 10px;
  	right: 10px;
  	color: white;
- 	font-size: 30px;
+ 	font-size: 40px;
  	font-weight: bold;
  	cursor: pointer;
+ 	z-index: 10;
+ 	width: 50px;
+ 	height: 50px;
+ 	text-align: end;
  }
 
  /* Next and previous buttons */
@@ -96,10 +100,51 @@
  	user-select: none;
  }
 
+ /* 
  .next {
  	right: 10px;
  }
 
  .prev {
  	left: 10px;
+ } */
+
+
+ .prev::before,
+ .next::before {
+ 	content: '';
+ 	position: fixed;
+ 	/* 화면에 상대적으로 고정 */
+ 	top: -500px;
+ 	bottom: 0;
+ 	width: 150px;
+ 	height: 1000px;
+ 	/* 화면의 절반 크기 */
+ 	cursor: pointer;
+ 	z-index: 1;
+ 	/* 실제 버튼 아래에 위치하지만 클릭 가능 */
+ }
+
+ .prev::before {
+ 	left: 0;
+ 	/* 화면의 왼쪽 절반을 커버 */
+ }
+
+ .next::before {
+ 	right: 0;
+ 	/* 화면의 오른쪽 절반을 커버 */
+ }
+
+ .prev {
+ 	left: 50%;
+ 	/* 화면의 중앙에서 왼쪽으로 버튼 크기의 반 만큼 */
+ 	margin-left: -50%;
+ 	/* 버튼 크기의 반을 음수 마진으로 설정 */
+ }
+
+ .next {
+ 	right: 50%;
+ 	/* 화면의 중앙에서 오른쪽으로 버튼 크기의 반 만큼 */
+ 	margin-right: -50%;
+ 	/* 버튼 크기의 반을 음수 마진으로 설정 */
  }
