@@ -100,14 +100,14 @@
  	user-select: none;
  }
 
- /* 
+
  .next {
- 	right: 10px;
+ 	padding-right: 7px;
  }
 
  .prev {
- 	left: 10px;
- } */
+ 	padding-left: 7px;
+ }
 
 
  .prev::before,

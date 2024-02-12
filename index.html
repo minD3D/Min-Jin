@@ -190,11 +190,23 @@
                     <div class="main">
 
                         <div class="card-template page1">
-                            <span class="img-block"><img src="./sample/@page1.png" /></span>
+
+                            <span class="img-block">
+                                <img class="img-block" id="randomImage" src="" alt="Random Image">
+                                <!-- <img src="./sample/@page1.jpg" /> -->
+                            </span>
                         </div>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                                var images = [
+                                    './sample/@page1.jpg',
+                                    './sample/@page2.jpg'
+                                ];
 
-
-
+                                var randomIndex = Math.floor(Math.random() * images.length);
+                                document.getElementById('randomImage').src = images[randomIndex];
+                            });
+                        </script>
 
                         <div class="card-template page1">
                             <section class="section4 active" var="isCalender">
@@ -529,7 +541,7 @@
                             </div>
 
                             <div class="txt-pic">
-                                Pictures from Bali and Itary
+                                Pictures from Bali and Italy
                                 <br />
                                 <br />
                             </div>
@@ -647,7 +659,8 @@
                             <tr>
                                 <td class="type1">버 스</td>
                                 <td class="type2">차병원(역삼방면) 하차 후 역삼역 방면 50M<br />
-                                    147,463(간선) 4211(지선) 3600,9600(광역)</td>
+                                    147,463(간선) 4211(지선) <br />3600,9600(광역)</td>
+
                             </tr>
                             <tr>
                                 <td class="type1">주 차</td>
@@ -733,8 +746,9 @@
                                 data-thumbnail="https://file.salondeletter.com/202401/03/6520/4d3fc929.png"
                                 data-url="https://mind3d.github.io/Min-Jin/">카카오톡으로 공유하기</div>
                         </div>
-                        <a href="https://mind3d.github.io/" class="copyright img-txt">M I N D 3 D ~ D E V <br />ⓒ 2023
-                            ALL RIGHTS RESERVED</a>
+                        <div class="txt-fin">
+                            이 청첩장은 신부 민지가 개발 작성한 청첩장입니다<br />어설프더라도 이쁘게 봐주세요
+                        </div>
                     </div>
                 </div>
                 <!-- //content -->
